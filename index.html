@@ -2,8 +2,58 @@
 <html>
 <head>
 	<title> CrystalsCollector Game </title>
-</head>
-<body>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+</head>
+<body id="pic">
+		<div class="header">
+			<h1>Crystals Collector</h1>
+		</div>
+
+		<div class="instructions">
+			<h3>How to Play...</h3>
+			<br>
+		
+			<p>You will be given a random number at the start of the game.</p>
+		
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			
+			<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+			
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+	
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</div>
+
+			<!--<ul>
+				<li id="red">Red</li>
+				<li id="orange">Orange</li>
+				<li id="yellow">Yellow</li>
+				<li id="green">Purple</li>
+			</ul>-->
+		<div class="matchNumber">
+			<!--<h2>Match This Number</h2>
+				<li class="randomNumber"></li>-->
+
+		</div>
+
+		
+				
+		<div class="crystals">
+		
+		</div>
+		<h1></h1>
+		<p id="priorNum"></p>
+		<p id="win"></p>
+		<p id="lost"></p>
+
+		<!--<div class="score">
+			<h3>Your Total Score Is...</h3>
+		</div>-->
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+
+
+
+/*boxes to hold crystals*/
+.crystals {
+	display: flex;
+	justify-content: space-around;
+	
+	
+	align-items: center;
+
+}
+
+.crystal {
+	border: 2px #ffe919;
+	border-radius: 25px;
+	height: 175px;
+	width: 175px;
+	box-shadow: 10px 10px 10px #e9f1ff;
+}
+
+.crystal:hover {
+	box-shadow: 10px 10px 10px #fda7ff;
+	cursor: pointer;
+	
+}
+
+.crystal:active {
+  
+  transform: translateY(4px);
+  
+
+}
+
+/*background image*/
+#pic {
+	background: url(../images/bluesky.jpg);
+	background-size: 100%;
+}
