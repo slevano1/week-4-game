@@ -16,9 +16,7 @@ var startGame = function () {
 	randomNumber = Math.floor(Math.random() * 101) + 19;
 	console.log(randomNumber);//test the random number generator
 
-	/*$(document).ready(function() {
-		var random = Math.floor(Math.random()*101) + 19;	
-	}*/
+
 
 	//starting number to match
 	$(".matchNumber").html('Match This Number: ' + randomNumber);
