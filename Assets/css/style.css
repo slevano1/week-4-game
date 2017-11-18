@@ -1,4 +1,38 @@
+/*add new font*/
+@font-face {
+	font-family: "ARCADE.TTF";
+	src: url("../font/ARCADE.TTF") format('truetype');
+	font-family: "Prototype.ttf";
+	src: url("../font/Prototype.ttf") format('truetype');
+}
 
+
+/*title*/
+.header {
+	font-family: 'ARCADE.TTF';
+	font-size: 70px;
+	color: #ff0000;
+	text-shadow: 2px 2px #ffffff;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/*Instructions*/
+.instructions {
+	font-family: 'ARCADE.TTF';
+	font-size: 40px;
+	color: #ff0000;
+	text-shadow: 2px 2px #ffffff;
+	text-align: center;
+}
+
+.gamePlay {
+	font-family: 'Prototype.ttf';
+	font-size: 15px;
+	color: #222222;
+		
+	text-align: center;
+}
 
 
 /*boxes to hold crystals*/
@@ -14,16 +48,32 @@
 .crystal {
 	border: 2px #ffe919;
 	border-radius: 25px;
-	height: 175px;
-	width: 175px;
+	height: 165px;
+	width: 165px;
 	box-shadow: 10px 10px 10px #e9f1ff;
 }
 
 .crystal:hover {
 	box-shadow: 10px 10px 10px #fda7ff;
 	cursor: pointer;
+	animation: shake 0.8s;
+  	animation-iteration-count: infinite;
 	
 }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 .crystal:active {
   
@@ -36,4 +86,41 @@
 #pic {
 	background: url(../images/bluesky.jpg);
 	background-size: 100%;
+}
+
+.matchNumber {
+	font-family: 'ARCADE.TTF';
+	font-size: 30px;
+	color: #ff0000;
+	text-shadow: 2px 2px #ffffff;
+	text-align: center;
+	padding-bottom: 2%;
+
+}
+
+#win {
+	font-family: 'ARCADE.TTF';
+	font-size: 30px;
+	color: #ff0000;
+	text-shadow: 2px 2px #ffffff;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+#lost {
+	font-family: 'ARCADE.TTF';
+	font-size: 30px;
+	color: #ff0000;
+	text-shadow: 2px 2px #ffffff;
+	padding-bottom: 2px;
+	text-align: center;
+	
+}
+
+#priorNum {
+	font-family: 'ARCADE.TTF';
+	font-size: 30px;
+	color: #ff0000;
+	text-shadow: 2px 2px #ffffff;
+	text-align: center;
 }

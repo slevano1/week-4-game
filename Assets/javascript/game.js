@@ -37,7 +37,7 @@ var startGame = function () {
 		 	});
 		 	crystal.css({
 		 		"background-image":"url('" + images[i] + "')",
-		 		"background-size":"cover"
+		 		"background-size":"cover",
 		 	});
 				
 		 $(".crystals").append(crystal);
@@ -61,7 +61,7 @@ $(document).on('click', ".crystal", function () {
 	if (priorNum > randomNumber) {
 		loss++;
 		
-		$('#lost').html("You Lost" + loss);
+		$('#lost').html("Games Lost:  " + loss);
 		console.log('You lost');
 
 		priorNum = 0;
@@ -75,7 +75,7 @@ $(document).on('click', ".crystal", function () {
 	else if (priorNum === randomNumber) {
 		win++;
 		
-		$('#win').html("You Win " + win);
+		$('#win').html("Games Won:  " + win);
 		console.log('You win');
 
 		priorNum = 0;
